@@ -2,18 +2,18 @@ package com.student.model;
 
 import javax.persistence.Column;
 import javax.persistence.Entity;
-import javax.persistence.GeneratedValue;
-import javax.persistence.GenerationType;
+
 import javax.persistence.Id;
 import javax.persistence.Table;
 
 @Entity
 @Table(name = "STUDENT")
 public class Student {
+	
 	@Id
-    @Column(name = "roll_no")
-    @GeneratedValue(strategy= GenerationType.AUTO)
+    @Column(name = "rollno")
 	private int rool_no;
+	
 	@Column(name = "name") 
 	private String name;
 
@@ -21,6 +21,12 @@ public class Student {
 	public int getRoolNo() {
 		return rool_no;
 	}
+	
+
+	public Student() {
+		
+	}
+
 
 	public Student(int roolNo, String name) {
 		super();

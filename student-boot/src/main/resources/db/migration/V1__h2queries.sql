@@ -1,5 +1,6 @@
 CREATE TABLE STUDENT
 (
-  roll_No INTEGER AUTO_INCREMENT,
-  name VARCHAR2(255),
+  rollNo INTEGER ,
+  name VARCHAR2(255)
 );
+

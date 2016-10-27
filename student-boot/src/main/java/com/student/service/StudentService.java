@@ -17,7 +17,7 @@ public class StudentService {
 	
 	@Transactional
 	public List<Student> getStudents(){
-		return repository.findAll();
+		return (List<Student>) repository.findAll();
 		
 	}
 }
